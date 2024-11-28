@@ -1,32 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="row">
         <div class="column" id="first">
             <div class="text">
-                <h2>Programming</h2>
-            <p>I like to program. I find it interesting to solve problems and make things work. I have been programming for about 10 years now.</p>
+                <h2>Miks on hobid head?</h2>
+                <p>Sa saad kasutada oma vaba aega muuks, kui TikTokis brainrottimiseks</p>
             </div>
-                    </div>
-        <div class="column" id="second">
             <div class="text">
-                <h2>Music</h2>
-                <p>I like to listen to music. I find it relaxing and it helps me to focus. I listen to music while programming.</p>
+                <h3 class="suurotsmik">Kas sinus peitub loomingulisust täis draakon?</h3>
+                <p>Lase ta valla võttes hobiks fotograafia ja see loom saab igat momenti jäädvustada.</p>
+            </div>
+            <div class="nested-row">
+                <div class="nested-column">
+                    <a id="fotobutt" href="page1.html" class="poster-button">
+                        <img src="./pildid/fotograafia.jpeg" alt="fotograafia pilt">
+                        <span>Fotograafia</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="column" id="second">
+            <h1>HOBILEIDJA</h1>
+            <p>Täida meie hoolikalt valmistatud test ning me leiame <span
+                    style="font-weight: bold; color: rgb(12, 255, 243);">JUST
+                    SULLE</span> perfektse ja personaliseeritud hobi.</p>
+            </p>
+
+            <div class="game">
+
+                <h2>Leia oma uus hobi</h2>
+                <p>ja avasta maailma!</p>
+                <div id="start-container">
+                    <button onclick="alusta()">ALUSTA!</button>
+                </div>
+                <div id="question-container" style="display: none;">
+                    <p id="question">kohahoidja</p>
+                    <button onclick="vasta('jah')">Jah</button>
+                    <button onclick="vasta('ei')">Ei</button>
+                </div>
+                <div id="result-container" style="display: none;">
+                    <h3>Your Perfect Hobby is:</h3>
+                    <p id="result"></p>
+                </div>
             </div>
         </div>
         <div class="column" id="third">
             <div class="text">
-                <h2>Video games</h2>
-                <p>I like to play video games. I find it fun and it helps me to relax. I play video games in my free time.</p>
+                <h2>Aga õppimine on mul juba piisavalt aegavõttev hobi...</h2>
+                <p>Kuigi uue hobi võtmine võib tunduda nagu ajaraisk, siis on väga vajalik saada oma mõtteid
+                    kohustustest mujale, näiteks mõne hobi abil.</p>
+            </div>
+            <div class="text">
+                <h3 class="suurotsmik">Kas sa tunned, et sa oled Robert Donwey Jr.?</h3>
+                <p>Kui sa arvad, et sa tõesti võid olla Iron Man, siis mine triatlonile ja näita kõigile enda jõudu.</p>
+            </div>
+            <div class="nested-row">
+                <div class="nested-column">
+                    <a id="ironmanbutt" href="page2.html" class="poster-button">
+                        <img src="./pildid/ironman.jpg" alt="ironmani pilt">
+                        <span>Ironman</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
