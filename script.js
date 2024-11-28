@@ -1,10 +1,16 @@
+/* 
+    Lasin copilotil genereerida koodi, 
+    kus on vajalikud htmli-mudimise funktsioonid (mida ma peast ei tea),
+    edasi programmeerisin korralikku loogikat ise edasi.
+*/
+
+
 const questions = [
-    ["Kas sulle meeldib õues aega veeta?", "both"],
+    ["Kas sulle meeldib õues aega veeta?", "photo"],
     ["Kas sulle meeldivad kehalised tegevused?", "iron"],
     ["Kas sa eelistad üksinda nikerdamist?", "photo"],
-    ["Kas sulle meeldib hetkesid jäädvustada?", "photo"],
+    ["Kas sulle meeldib hetkeid jäädvustada?", "photo"],
     ["Kas sa oled pigem introvert?", "photo"],
-    ["Kas sa oled pigem ekstravert?", "iron"],
     ["Kas sa oled pigem rahulik?", "photo"],
     ["Kas sa oled pigem aktiivne?", "iron"],
     ["Kas sa oled pigem kohusetundlik?", "iron"],
@@ -14,19 +20,20 @@ const questions = [
     ["Kas sa eelistad pigem väljas käia?", "iron"],
     ["Kas sa eelistad pigem rutiini?", "iron"],
     ["Kas sa eelistad pigem spontaansust?", "photo"],
-    ["Kas sa eelistad pigem planeerimist?", "iron"],
+    ["Kas sa eelistad pigem mõelda?", "photo"],
 ];
 
 let questionlist = questions.sort(() => 0.5 - Math.random()).slice(0, 6);
 let currentQuestionIndex = 0
 let skoorid = {
-    foto: 0,
+    photo: 0,
     iron: 0
 }
 function alusta() {
     document.getElementById("start-container").style.display = "none";
     document.getElementById("question").innerText = questionlist[currentQuestionIndex][0];
     document.getElementById("question-container").style.display = "flex";
+    document.querySelector('.game').scrollIntoView({ behavior: 'smooth' });
 }
 function vasta(answer) {
     if (answer === "jah") {
@@ -47,9 +54,9 @@ function tulemus() {
     document.getElementById("question-container").style.display = "none";
     document.getElementById("result-container").style.display = "flex";
     const tulemus = skoorid.photo > skoorid.iron ? "photobutt" : "ironmanbutt";
-    document.getElementById("result-container").innerHTML = `
-        <h3>Your Perfect Hobby is:</h3>
-        <div id="result"></div>
-    `;
-    document.getElementById("result").appendChild(document.getElementById(tulemus));
+    // copy the element with the id tulemus
+    const tulemusElement = document.getElementById(tulemus).cloneNode(true);
+    document.getElementById("result").appendChild(tulemusElement);
+    document.querySelector('#gamesec').scrollIntoView({ behavior: 'smooth' });
+
 }

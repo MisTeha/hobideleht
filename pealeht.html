@@ -6,74 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ühine.css">
 </head>
 
 <body>
-
-    <div class="row">
-        <div class="column" id="first">
-            <div class="text">
-                <h2>Miks on hobid head?</h2>
-                <p>Sa saad kasutada oma vaba aega muuks, kui TikTokis brainrottimiseks</p>
-            </div>
-            <div class="text">
-                <h3 class="suurotsmik">Kas sinus peitub loomingulisust täis draakon?</h3>
-                <p>Lase ta valla võttes hobiks fotograafia ja see loom saab igat momenti jäädvustada.</p>
-            </div>
-            <div class="nested-row">
-                <div class="nested-column">
-                    <a id="fotobutt" href="page1.html" class="poster-button">
-                        <img src="./pildid/fotograafia.jpeg" alt="fotograafia pilt">
-                        <span>Fotograafia</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="column" id="second">
-            <h1>HOBILEIDJA</h1>
-            <p>Täida meie hoolikalt valmistatud test ning me leiame <span
-                    style="font-weight: bold; color: rgb(12, 255, 243);">JUST
-                    SULLE</span> perfektse ja personaliseeritud hobi.</p>
+    <header>
+        <h1><a href="index.html">HOBILEIDJA</a></h1>
+        <nav>
+            <ul>
+                <li><a href="fotograafia.html">Fotograafia</a></li>
+                <li><a href="triatlon.html">Triatlon</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Miks on hobid head?</h2>
+            <p>Sa saad kasutada oma vaba aega muuks, kui TikTokis brainrottimiseks.
+                Hobid aitavad sul lõõgastuda ja puhata, samuti arendavad nad sinu oskusi ja teadmisi.
+                Hobidega tegelemine aitab ka stressi maandada ja enesetunnet parandada.
             </p>
+        </section>
+        <section>
+            <h2>Aga õppimine on mul juba piisavalt aegavõttev hobi...</h2>
+            <p>Kuigi uue hobi võtmine võib tunduda nagu ajaraisk, siis on väga vajalik saada oma
+                mõtteid kohustustest
+                eemale ja teha midagi, mis sulle tõeliselt meeldib. Seda saad teha just nii, et leiad endale uue hobi!
+            </p>
+        </section>
+        <section>
+            <h2>Kas sinus peitub loomingulisust täis draakon?
+                Või tunned end nagu Robert Downey Jr.?</h2>
+            <p>Lase oma loominguline draakon valla fotograafia abil. Kui sul on kaamera, saad teha
+                õige kompositsiooni
+                ja sisuga tõelist kunsti; ühe nupuvajutusega saad jäädvustada hetke igaveseks!
+            </p>
+            <p>Kui tunned, et sa oled (või tahad olla) väga väga tugev ja vastupidav, suudad
+                joosta, rattaga kimada,
+                ujuda, siis mine triatlonile. (Näiteks IRONMANile ;))</p>
+        </section>
 
+        <section id="hobinupud">
+            <a id="photobutt" href="page1.html" class="poster-button">
+                <img src="./pildid/photo.webp" alt="fotograafia pilt">
+                <span>Fotograafia</span>
+            </a>
+            <a id="ironmanbutt" href="page2.html" class="poster-button">
+                <img src="./pildid/triat.webp" alt="ironmani pilt">
+                <span>Triatlon</span>
+            </a>
+        </section>
+
+        <section id="gamesec">
+            <h2 class="section-title">Pole hobi? Pole probleemi!</h2>
+
+            <p class="section-text">Alt leiad meie poolt tehtud <strong>HOBILEIDJA</strong>, mis küsib Sinu käest sinu
+                eelistusi ja omadusi,
+                ning paneb sellest kokku ülitäpse profiili, mille abil leiab ta meie hoolikalt kureeritud
+                <strong><em>ekstensiivsest</em></strong> andmebaasist
+                just <em>sinu</em> jaoks õige hobi.
+            </p>
             <div class="game">
-
-                <h2>Leia oma uus hobi</h2>
-                <p>ja avasta maailma!</p>
+                <h1 class="game-title kitsas">Leia oma uus hobi</h1>
                 <div id="start-container">
                     <button onclick="alusta()">ALUSTA!</button>
                 </div>
                 <div id="question-container" style="display: none;">
-                    <p id="question">kohahoidja</p>
+                    <p id="question" class="question-text">kohahoidja</p>
                     <button onclick="vasta('jah')">Jah</button>
                     <button onclick="vasta('ei')">Ei</button>
                 </div>
                 <div id="result-container" style="display: none;">
-                    <h3>Your Perfect Hobby is:</h3>
+                    <h3 class="kitsas">Sinu kõige õigem hobi:</h3>
                     <p id="result"></p>
                 </div>
             </div>
-        </div>
-        <div class="column" id="third">
-            <div class="text">
-                <h2>Aga õppimine on mul juba piisavalt aegavõttev hobi...</h2>
-                <p>Kuigi uue hobi võtmine võib tunduda nagu ajaraisk, siis on väga vajalik saada oma mõtteid
-                    kohustustest mujale, näiteks mõne hobi abil.</p>
-            </div>
-            <div class="text">
-                <h3 class="suurotsmik">Kas sa tunned, et sa oled Robert Donwey Jr.?</h3>
-                <p>Kui sa arvad, et sa tõesti võid olla Iron Man, siis mine triatlonile ja näita kõigile enda jõudu.</p>
-            </div>
-            <div class="nested-row">
-                <div class="nested-column">
-                    <a id="ironmanbutt" href="page2.html" class="poster-button">
-                        <img src="./pildid/ironman.jpg" alt="ironmani pilt">
-                        <span>Ironman</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+        </section>
+        <section id="soovitused">
+            <h2 class="section-title">Meie soovitused</h2>
+            <p class="section-text">Meie soovitused on järgmised:</p>
+            <ul>
+                <li>Proovi midagi uut!</li>
+                <li>Ära karda ebaõnnestuda!</li>
+                <li>Leia endale sobiv hobi!</li>
+                <li>Ole alati kriitiline info suhtes, mida leiad internetist. Ära usu kõike!</li>
+            </ul>
+        </section>
+
+    </main>
     <script src="script.js"></script>
 </body>
 
