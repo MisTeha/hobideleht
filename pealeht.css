@@ -168,3 +168,10 @@ button:hover {
     font-size: 1.1em;
 
 }
+
+#hobinupud {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
