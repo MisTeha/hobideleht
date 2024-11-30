@@ -1,0 +1,14 @@
+.mySlides {
+    display: none;
+    width: 100%;   
+    height: auto; 
+}
+
+.slideshow_stiil {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 10px;  
+}
