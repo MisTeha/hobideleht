@@ -84,7 +84,8 @@ footer p {
     font-size: 1em;
 }
 
-p {
+p,
+li {
     font-size: 1.2em;
 
 }
