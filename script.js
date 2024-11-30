@@ -1,3 +1,7 @@
+/* 
+    Genereeritud ChatGPTga, ise kohandatud vastavalt vajadusele.
+*/
+
 // Lisame piltidele hover-efekti
 const smallImages = document.querySelectorAll(".small-image");
 smallImages.forEach((image) => {
