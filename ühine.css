@@ -10,7 +10,7 @@ body {
 }
 
 main {
-    width: 40vw;
+    width: 60vw;
     min-width: 600px;
     max-width: 1200px;
     margin: 20px auto;
@@ -70,6 +70,20 @@ header nav ul li a:hover {
 
 footer {
     background-color: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+p {
+    font-size: 1.2em;
 }
 
 h1 {
