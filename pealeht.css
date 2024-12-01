@@ -118,6 +118,7 @@ button:hover {
 #hobinupud {
     display: flex;
     flex-direction: row;
+    gap: 20px;
 }
 
 /* Copiloti käest küsitud listi stiil */
