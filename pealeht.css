@@ -30,17 +30,6 @@
     padding: 20px;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    z-index: 3;
-}
-
 .game {
     font-family: 'Oswald' !important;
     background-color: #545454;
